@@ -1,0 +1,44 @@
+body {
+    background: rgba(39, 34, 34, 0.986);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    color: cyan;
+    text-align: center;
+  }
+  h3{
+    margin-top: 150px;
+    text-align: center;
+    font-size: large;
+  }
+  .container {
+    width: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  
+.white {
+    position: relative;
+    background: rgb(241, 240, 240);
+    width: 10%;
+    height: 200px;
+    margin: 0 2px;
+    border-radius: 5%;
+  }
+  
+  .white.black:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: rgb(17, 11, 11);
+    right: -25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    border-radius: 5%;
+  }
